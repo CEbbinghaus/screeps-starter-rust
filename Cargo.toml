@@ -17,6 +17,9 @@ screeps-game-api = { git = "https://github.com/rustyscreeps/screeps-game-api.git
 #screeps-game-api = "0.10"
 wasm-bindgen = "0.2"
 web-sys = { version = "0.3", features = ["console"] }
+# uuid = { version = "1.2", features = ["v4", "wasm-bindgen"]}
+uuid = { version = "1.2", default-features = false} #, features = ["v4", "wasm-bindgen"]
+rand = { version = "0.8.5", default-features = false, features = ["std_rng"]}
 
 # The `console_error_panic_hook` crate provides better debugging of panics by
 # logging them with `console.error`. This is great for development, but requires
